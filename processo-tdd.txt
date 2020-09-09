@@ -1,0 +1,3 @@
+Escreve-se o teste funcional e o executa, como ele não vai passar entra-se no ciclo de escrita de testes unitários e dos códigos que
+implementam a funcionalidade testada. Após os testes unitários terem passado executa novamente os testes funcionais. Se o teste funcional
+passar e não houver necessidade de refatoração da aplicação termina-se o teste caso contrário o cliclo se repete.   
