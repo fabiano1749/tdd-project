@@ -1,0 +1,2 @@
+Diferença 1) Testes de unidades são baratos enquanto os testes funcionais são caros
+Diferença 2) Testes funcionais são lentos enquanto os testes de unidades são rápidos
