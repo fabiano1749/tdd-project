@@ -38,7 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'lists',
+    'accounts',
 ]
+
+AUTH_USER_MODEL = 'accounts.User'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -51,6 +54,18 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'superlists.urls'
+
+AUTH_USER_MODEL = 'accounts.ListUser',
+
+AUTHENTICATION_BACKENDS = [
+    'accounts.authentication.PasswordlessAuthenticationBackend',
+]
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'fabiano1749testes@gmail.com'
+EMAIL_HOST_PASSWORD = os.environ.get('1749lm+*Testes')
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
 
 TEMPLATES = [
     {
